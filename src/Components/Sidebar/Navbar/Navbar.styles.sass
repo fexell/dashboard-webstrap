@@ -1,0 +1,47 @@
+#SidebarNavbar
+  .nav-link
+    min:
+      height: 40px
+    max:
+      height: 40px
+    margin:
+      bottom: .5rem
+    padding:
+      block: .8125rem
+      bottom: 1rem
+    border:
+      radius: 5rem
+
+    &:hover
+      background:
+        color: var(--white-color-lighter-1)
+
+    &.active
+      color: var(--main-orange-color-darker-4)
+      background:
+        color: var(--main-orange-color-lighter-5)
+
+      &:hover
+        background:
+          color: var(--main-orange-color-lighter-2)
+    
+    > svg
+      margin:
+        left: 1rem
+        right: 1rem
+  
+.sidebar--collapsed:not(.sidebar--hover)
+  #SidebarNavbar
+    .nav-link
+      justify:
+        content: center
+      margin:
+        right: 0
+      padding: 0
+
+      > svg
+        margin: 0
+          top: -2px
+
+      > .link__text
+        display: none

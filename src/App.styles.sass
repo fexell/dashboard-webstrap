@@ -1,0 +1,42 @@
+#App
+  background:
+    color: var(--white-color-darker-1)
+
+  > .app__container
+    display: grid
+    grid:
+      template:
+        areas: 'Sidebar Header Header' 'Sidebar Content Content'
+        rows: 100px 1fr
+        columns: 310px 1fr
+    transition: grid-template-columns 100ms
+
+    > #MobileHeader
+      grid:
+        area: MobileHeader
+
+    > #Header
+      grid:
+        area: Header
+
+    > #Sidebar
+      grid:
+        area: Sidebar
+
+    > #Content
+      grid:
+        area: Content
+
+  &.sidebar--collapsed:not(.sidebar--hover)
+    > .app__container
+      grid:
+        template:
+          columns: 110px 1fr
+
+  &.window--small
+    > .app__container
+      grid:
+        template:
+          areas: 'MobileHeader MobileHeader MobileHeader' 'Header Header Header' 'Content Content Content'
+          rows: 70px 100px 1fr
+          columns: 0 1fr

@@ -1,0 +1,19 @@
+#SidebarHeader
+  min:
+    height: 70px
+  border:
+    radius: .5rem .5rem 0 0
+  background:
+    color: var(--main-orange-color-1)
+
+.sidebar--collapsed:not(.sidebar--hover)
+  #SidebarHeader
+    .sidebar__header__logo
+      display: none
+
+.window--small
+  #SidebarHeader
+    border:
+      radius: 0
+    background:
+      color: var(--white-color-1)

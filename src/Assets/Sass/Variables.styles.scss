@@ -1,0 +1,74 @@
+$main-orange-colors: (
+  1: #ff9470,
+  lighter-1: #ff9f7e,
+  lighter-2: #ffa98d,
+  lighter-3: #ffb49b,
+  lighter-4: #ffbfa9,
+  lighter-5: #ffcab8,
+  lighter-6: #ffd4c6,
+  lighter-7: #ffdfd4,
+  lighter-8: #ffeae2,
+  lighter-9: #fff4f1,
+  darker-1: #e68565,
+  darker-2: #cc765a,
+  darker-3: #b3684e,
+  darker-4: #995943);
+
+$white-colors: (
+  1: #ffffff,
+  lighter-1: #e9e9e9,
+  lighter-2: #ebebeb,
+  lighter-3: #eeeeee,
+  lighter-4: #f0f0f0,
+  lighter-5: #f2f2f2,
+  lighter-6: #f3f3f3,
+  lighter-7: #f5f5f5,
+  lighter-8: #f6f6f6,
+  lighter-9: #f8f8f8,
+  darker-1: #e6e6e6,
+  darker-2: #cccccc,
+  darker-3: #b3b3b3,
+  darker-4: #999999);
+
+$text-colors: (
+  1: #495057,
+  2: #a8abae,
+  3: #6c757d
+);
+
+:root {
+  --main-orange-color-1: #{ map-get($main-orange-colors, 1) };
+  --main-orange-color-lighter-1: #{ map-get($main-orange-colors, lighter-1) };
+  --main-orange-color-lighter-2: #{ map-get($main-orange-colors, lighter-2) };
+  --main-orange-color-lighter-3: #{ map-get($main-orange-colors, lighter-3) };
+  --main-orange-color-lighter-4: #{ map-get($main-orange-colors, lighter-4) };
+  --main-orange-color-lighter-5: #{ map-get($main-orange-colors, lighter-5) };
+  --main-orange-color-lighter-6: #{ map-get($main-orange-colors, lighter-6) };
+  --main-orange-color-lighter-7: #{ map-get($main-orange-colors, lighter-7) };
+  --main-orange-color-lighter-8: #{ map-get($main-orange-colors, lighter-8) };
+  --main-orange-color-lighter-9: #{ map-get($main-orange-colors, lighter-9) };
+
+  --main-orange-color-darker-1: #{ map-get($main-orange-colors, darker-1) };
+  --main-orange-color-darker-2: #{ map-get($main-orange-colors, darker-2) };
+  --main-orange-color-darker-3: #{ map-get($main-orange-colors, darker-3) };
+  --main-orange-color-darker-4: #{ map-get($main-orange-colors, darker-4) };
+
+  --white-color-1: #{ map-get($white-colors, 1) };
+  --white-color-lighter-1: #{ map-get($white-colors, lighter-1) };
+  --white-color-lighter-2: #{ map-get($white-colors, lighter-2) };
+  --white-color-lighter-3: #{ map-get($white-colors, lighter-3) };
+  --white-color-lighter-4: #{ map-get($white-colors, lighter-4) };
+  --white-color-lighter-5: #{ map-get($white-colors, lighter-5) };
+  --white-color-lighter-6: #{ map-get($white-colors, lighter-6) };
+  --white-color-lighter-7: #{ map-get($white-colors, lighter-7) };
+  --white-color-lighter-8: #{ map-get($white-colors, lighter-8) };
+  --white-color-lighter-9: #{ map-get($white-colors, lighter-9) };
+  --white-color-darker-1: #{ map-get($white-colors, darker-1) };
+  --white-color-darker-2: #{ map-get($white-colors, darker-2) };
+  --white-color-darker-3: #{ map-get($white-colors, darker-3) };
+  --white-color-darker-4: #{ map-get($white-colors, darker-4) };
+
+  --text-color-1: #{ map-get($text-colors, 1) };
+  --text-color-2: #{ map-get($text-colors, 2) };
+  --text-color-3: #{ map-get($text-colors, 3) };
+}
