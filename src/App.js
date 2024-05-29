@@ -47,12 +47,15 @@ const App = () => {
   const [ isSidebarCollapsed, setSidebarCollapsed ] = useState(false) // Is the sidebar collapsed?
   const [ isSidebarHover, setSidebarHover ] = useState(false) // Is the sidebar being hovered?
   const [ isSidebarHidden, setSidebarHidden ] = useState(false) // Is the sidebar being hidden?
-  const [ isHeaderRightHidden, setHeaderRightHidden ] = useState(true)
+  const [ isHeaderRightHidden, setHeaderRightHidden ] = useState(true) // Is the header-right component hidden?
 
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <>
+        {/* Display layout in all routes */}
         <Route path='/' element={ <Layout /> }>
+
+          {/* Home page */}
           <Route index element={ <HomePage /> } />
         </Route>
       </>
@@ -118,6 +121,7 @@ const App = () => {
               {/* The "hide-the-sidebar" property for small screens */}
               <SidebarHiddenContext.Provider value={[ isSidebarHidden, setSidebarHidden ]}>
 
+                {/* Header right side (with dropdown and searchbar) is-hidden-context */}
                 <HeaderRightHiddenContext.Provider value={[ isHeaderRightHidden, setHeaderRightHidden ]}>
 
                   <main id='App' className={ `app
